@@ -8,6 +8,8 @@ html{
     font-family: 'Ubuntu', sans-serif;
 }
 
+a{ text-decoration: none;}
+
 body{
     background-color: #F2F2F2;
     box-sizing: border-box;
@@ -22,9 +24,8 @@ header{
     align-items: center;
     background-color: #000;
     height: 82px;
-    color: #FFF;
+    
 }
-
 
 nav{
     font-size: 16px;
@@ -35,28 +36,14 @@ nav{
     justify-content: center;
     align-items: center;
     margin: 0px;
+    color: #FFF;
 }
 
-nav ul{
-    position: relative;
-    list-style: none;
-    float: right;
-    margin: 0px;
-}
+nav a{ color: #FFF; margin: 10px 15px;}
 
-nav ul li{  
-    list-style: none;
-    float: left;
-    padding: 10px;
-}
-
-li a:hover{
+nav a:hover{
     color: #5C5CFF;
     font-weight: bold;
-}
-
-a{
-    text-decoration: none !important;
 }
 
 #logo{ 
@@ -81,7 +68,7 @@ a{
 }
 
 #usuario{
-    width: 50px;
+    width: 40px;
     overflow: hidden;
     position: absolute;
     right: 10px;
@@ -93,7 +80,7 @@ a{
 
 #usuario img:hover{
     position: relative;
-    right: 35px;
+    right: 40px;
     cursor: pointer;
 }
 

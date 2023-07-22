@@ -45,3 +45,10 @@
     display: flex;
     justify-content: center;
 }
+
+#imagem-servico img{ width: 100%; }
+
+#imagem-servico{
+    width: 100%;
+    margin-bottom: 50px;
+}

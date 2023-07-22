@@ -36,8 +36,8 @@
     10%{ margin-left: 0; }
     31%{ margin-left: -100.4vw; }
     50%{margin-left: -100.4vw; }
-    75% { margin-left: -201.5vw; }
-    95%{ margin-left: -201.5vw; }
+    75% { margin-left: -200.5vw; }
+    95%{ margin-left: -200.5vw; }
     100% { margin-left: 0;}
 }
 
@@ -235,7 +235,7 @@ article p{
     display: inline-block;
     justify-content: space-around;
     width: 10%;
-    margin-left: 70px;
+    margin: 30px;
 }
 
 #servicos-div{
