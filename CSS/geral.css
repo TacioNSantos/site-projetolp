@@ -97,6 +97,9 @@ main{
     color: #FFF;
     display: inline-block;
     text-align: center;
+    clear: both;
+    position: relative;
+    bottom: 0px;
 }
 
 #footer-container-01{
