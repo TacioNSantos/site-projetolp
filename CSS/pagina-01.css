@@ -1,0 +1,47 @@
+#servicos h3{
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+#servicos hr{
+    border: none;
+    border-top: 3px solid #5C5CFF;
+    width: 247.002px;
+    height: 5px;
+}
+
+#todos-servicos{
+    width: 100%;
+    text-align: center;
+}
+
+.servicos-paineis{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.content-foto{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.servicos-paineis img{
+    width: 105%;
+    height: 200px;
+}
+
+.servicos-paineis p{    
+    display: flex;
+    justify-content: center;
+}

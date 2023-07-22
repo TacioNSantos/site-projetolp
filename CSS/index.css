@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+/* parte de configuração da animação do carrossel*/
+#carrossel-imagens{
+    margin-top: 20px;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F2F2F2 !important;
+}
+
+.carrossel-conteudo img{
+    background-color: #F2F2F2 !important;
+    height: 85vh;
+    width: 99vw;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.carrossel-conteudo{
+    background-color: #F2F2F2 !important;
+    display: inline-block;
+    height: 100%; 
+    width: 100vw;
+}
+
+#imagens-carrossel{
+    background-color: #F2F2F2 !important;
+    animation-name: carrossel;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    width: 313%;
+}
+
+@keyframes carrossel {
+    
+    0% { margin-left: 0;}
+    10%{ margin-left: 0; }
+    31%{ margin-left: -101.1%; }
+    50%{margin-left: -101.1%; }
+    75% { margin-left: -202.2%; }
+    95%{ margin-left: -202.2%; }
+    100% { margin-left: 0;}
+}
+
+
+
+#carrossel-01{
+    animation-name: num-carrossel01;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes num-carrossel01{
+    0% { background-color: #5C5CFF; }
+    10%{ background-color: #5C5CFF;  }
+    31%{ background-color: #474747; }
+    50%{background-color: #474747; }
+    75% { background-color: #474747; }
+    95%{ background-color: #474747; }
+    100% { background-color: #5C5CFF;}
+}
+
+#carrossel-02{
+    animation-name: num-carrossel02;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes num-carrossel02{
+    0% { background-color: #474747; }
+    10%{ background-color: #474747;  }
+    31%{ background-color: #5C5CFF;  }
+    50%{background-color: #5C5CFF;  }
+    75% { background-color: #474747; }
+    95%{ background-color: #474747; }
+    100% { background-color: #474747;}
+}
+
+#carrossel-03{
+    animation-name: num-carrossel03;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes num-carrossel03{
+    0% { background-color: #474747; }
+    10%{ background-color: #474747;  }
+    31%{ background-color: #474747;   }
+    50%{background-color: #474747;  }
+    75% { background-color: #5C5CFF; }
+    95%{ background-color: #5C5CFF; }
+    100% { background-color: #474747;}
+}
+
+/* Fim da parte do carrossel */
+
+.titulo-carrossel{
+    width: 620px;
+    color: #F2F2F2;
+    position: relative;
+    bottom: 500px;
+    left: 100px;
+    font-size: 40px;
+    font-weight: bold !important;
+    line-height: normal;
+}
+
+.botao-carrossel{
+    box-shadow: 0px 4px 6px #5C5CFF;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    bottom: 350px;
+    left: 100px;
+    background: #F2F2F2;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.botao-carrossel:hover{
+    background: #000;
+    cursor: pointer;
+}
+
+#numero-carrossel{
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+
+.num-carrossel{
+    border-radius: 3px;
+    padding: 5px;
+    margin: 4px;
+    width: 30px;
+    background: #474747;
+}
+
+.num-carrossel:hover{
+    background: #000;
+    cursor: pointer;
+}
+
+
+.titulo{
+    font-size: 25px !important; 
+    color: #5C5CFF;
+}
+
+#foto-titulo-02{ width: 35%; margin-right: 20px; overflow: hidden; border-radius: 10px;}
+
+#foto-titulo-02 img{ width: 105%; height: 105%; border: groove;}
+
+#texto-02{ width: 65%; margin: 0px;}
+
+article{
+    float: left;
+    box-sizing: border-box;
+    text-align: justify;
+    margin: 50px 20px 50px 5px;
+    width: 38%;
+    border-radius: 5px;
+    padding: 8px 10px 8px 15px;
+    min-height: 425px;
+    font-size: 13px;
+}
+
+.imagem-artigo{ width: 45%; margin-right: 20px; overflow: hidden; border-radius: 10px; border: groove;}
+
+.imagem-artigo img{ width: 105%; height: 105%;} 
+
+.artigo{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+article p{
+    width: 55%;
+    margin: 0px;
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: white;
+}
+
+
+#logo{ 
+    justify-content: start;
+    position: relative;
+    top: 20px;
+    width: 115px;
+    margin: 0px;
+    float: left;
+}
+
+#empresa{
+    color: #F2F2F2;
+    float: left;
+    margin: 0px;
+}
+
+#usuario{
+    width: 35px;
+    position: absolute;
+    right: 10px;
+}
+
+#fundo-azul{
+    display: flex;
+    justify-content:space-around;
+    float: left;
+    background-color: #5C5CFF;
+    height: 400px;
+    margin-bottom: 10%;
+}
+
+#img-fundo-azul {
+    width: 30% ;
+    height: 75%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+#img-fundo-azul img {
+    width: 104%;
+    height: 104%;
+}
+
+#titulo-azul{
+    font-size: 25px !important; 
+    color: #F2F2F2;
+}
+
+#texto-azul{
+    font-size:larger;
+    color: #F2F2F2;
+}
+#sec-azul{
+    display: inline-block;
+    padding-top: 35px;
+    padding-left: 20px;
+    width: 40%;
+}
+
+#parceiros{
+    display: flex;
+    margin-bottom: 150px;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+#parceiros img{
+    display: inline-block;
+    justify-content: space-around;
+    width: 10%;
+    margin-left: 70px;
+}
+
+#servicos-div{
+   margin-bottom: 10%; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#conteiner-servico-01{ margin-left: 0px; }
+
+.conteiner-servicos{
+    background-color: #5C5CFF;
+    color: #F2F2F2; 
+    width: 400px;
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 10px 10px 10px 25px;
+}
+
+.conteiner-servicos h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:larger;
+    color: #F2F2F2;  
+}
+
+
+.conteiner-servicos a{
+    color: #F2F2F2; 
+}
+
+.conteiner-servicos a:hover{
+    font-weight: bold;
+    color: #000; 
+}
