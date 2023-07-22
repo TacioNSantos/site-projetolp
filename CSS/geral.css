@@ -89,10 +89,48 @@ main{
     box-sizing: border-box;
 }
 
+/*--------Footer-------*/
+
 #footer{
-    background: #000;
-    clear: both;
     width: 100%;
+    background-color: #000;
+}
+
+#Copyright{
+    display: flex;
+    justify-content: end;
+}
+
+.container-footer{
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#footer-container-01{
+    float: left;
+    margin-right: 360px;
+    margin-left: 30px;
+}
+
+#footer-container-03{
+    margin-left: 350px;
+}
+
+.foto-footer{
+    width: 70px;
+}
+
+.footer-social{
+    width: 33px;
+    margin-right: 16px;
+}
+
+.logo-footer-p{
+  color: #F2F2F2;
+}
+#redes-social{
+    margin-bottom: 15px;
 }
 
 
