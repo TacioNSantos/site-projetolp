@@ -15,10 +15,10 @@
             $_SESSION["usuario"] = $row["usuario"];
             $_SESSION["senha"] = $row["senha"];
         }  
-         header('location:../paginas/painel.php');   
+         header('location: ../paginas/painel.php');   
 
     }else{
         $_SESSION["msgErro"] = "Usuário ou senha incorreto!!";
-        header('location:../paginas/login.php');    
+        header('location: ../paginas/login.php');    
     }
 ?>
