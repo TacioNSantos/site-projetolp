@@ -42,7 +42,7 @@
                     
                     }
                     session_destroy();
-                ?>            
+                ?>
             </p>
             <form action="../PHP/logar.php" method="POST">
                 <input type="text" size="20px" placeholder="Login" name="usuario"> 
