@@ -30,8 +30,22 @@
 
     <div id="content-geral">
         <div id="form-login">
-            <form action="" method="POST">
-                <input type="text" size="20px" placeholder="Login" name="login"> 
+            <p id="messagemErro">
+                <?php 
+                    session_start();
+                    
+                    $mensagem = isset($_SESSION["msgErro"]) ? $_SESSION["msgErro"] : "";
+
+                    if($mensagem != "")
+                    {
+                        echo $mensagem;
+                    
+                    }
+                    session_destroy();
+                ?>
+            </p>
+            <form action="../PHP/logar.php" method="POST">
+                <input type="text" size="20px" placeholder="Login" name="usuario"> 
                 <br>
                 <input type="password" size="20px" placeholder="Senha" name="senha">
                 <br>
