@@ -116,11 +116,15 @@
     font-weight: bold;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
+    color: #5C5CFF;
 }
+
+.botao-carrossel a:visited{ color: #5C5CFF; }
 
 .botao-carrossel:hover{
     background: #000;
     cursor: pointer;
+    color: white;
 }
 
 #numero-carrossel{
