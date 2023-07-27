@@ -34,10 +34,10 @@
     
     0% { margin-left: 0;}
     10%{ margin-left: 0; }
-    31%{ margin-left: -100vw; }
-    50%{margin-left: -100vw; }
-    75% { margin-left: -200vw; }
-    95%{ margin-left: -200vw; }
+    31%{ margin-left: -100.2vw; }
+    50%{margin-left: -100.2vw; }
+    75% { margin-left: -200.3vw; }
+    95%{ margin-left: -200.3vw; }
     100% { margin-left: 0;}
 }
 

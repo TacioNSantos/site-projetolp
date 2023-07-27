@@ -8,32 +8,6 @@
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../PHP/painel-css.php" type="text/css">
 
-    <style>
-        #geral{
-            margin: auto;
-            height: 66vh;
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            align-items: center;
-        }
-
-        #form-escolher-pagina{
-            display: flex;
-            flex-direction: column;
-        }
-
-        input{
-            margin: 10px;
-        }
-
-        .forms-pag{
-            position: absolute;
-            top: 250px;
-        }
-
-    </style>
-
 </head>
 <body>
     <header>
@@ -69,7 +43,7 @@
             <div id="form-index" class="forms-pag">
                 <form action="" method="POST">
                     <input type="hidden" value="index" name="pagina">
-                    pg-index
+                    <center><h2>Página Index</h2></center>
                     <input type="text">
                     <input type="text">
                     <input type="text" name="" id="">
@@ -80,7 +54,7 @@
                 <form action="" method="POST">
                     <input type="hidden" value="pagina-01" name="pagina">
 
-                    pg-01
+                    <center><h2>Página 01</h2></center>
                     <input type="text">
                     <input type="text">
                     <input type="text" name="" id="">
@@ -91,7 +65,7 @@
                 <form action="" method="POST">
                     <input type="hidden" value="pagina-02" name="pagina">
 
-                    pg-02
+                    <center><h2>Página 02</h2></center>
                     <input type="text">
                     <input type="text">
                     <input type="text" name="" id="">
