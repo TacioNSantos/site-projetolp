@@ -26,4 +26,5 @@
         $_SESSION["msgErro"] = "Usuário ou senha incorreto!!";
         header('location: ../paginas/login.php');    
     }
+    mysqli_close($con);
 ?>

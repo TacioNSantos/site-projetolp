@@ -1,6 +1,5 @@
 <?php 
     include("conexao.php");
-
     session_start();
 
     $pag = "";
@@ -52,5 +51,8 @@
     }elseif($pag == "pagina-02"){
         echo"pagina-02";
 
+    }else{
+        header("location: ../paginas/painel.php");
     }
+    mysqli_close($con);
 ?> 

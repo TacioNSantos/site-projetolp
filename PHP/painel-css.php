@@ -2,7 +2,7 @@
     header("Content-type: text/css");
     session_start();
 
-    $pag = "";
+    $pag = "index";
 
     if(isset($_SESSION["pgSelecionada"])){$pag = $_SESSION["pgSelecionada"];};
 ?>
@@ -13,7 +13,7 @@
 
 #geral{
     margin: auto;
-    min-height: 1300px;
+    min-height: 1650px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -68,4 +68,24 @@ textarea{
 .alterar-conteudo{
     width: 300px;
     padding: 20px;
+}
+
+.visualizar-imagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imagem{
+    width: 150px; 
+}
+
+.p-atual{
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+label{
+    font-weight: bold;
 }

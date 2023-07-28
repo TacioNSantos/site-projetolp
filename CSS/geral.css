@@ -97,7 +97,7 @@ main{
     display: inline-block;
     text-align: center;
     clear: both;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
