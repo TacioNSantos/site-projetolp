@@ -1,3 +1,12 @@
+<?php 
+    session_start();
+
+    if(isset($_SESSION["ValidaLogin"])){
+        header("location: painel.php");
+    }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -24,16 +33,14 @@
         </nav>
         
         <div id="usuario">
-            <a href="login.html"><img src="../imagens/icone_usuario.png" alt="icone do usuário"></a>
+            <a href="login.php"><img src="../imagens/icone_usuario.png" alt="icone do usuário"></a>
         </div>
     </header>
 
     <div id="content-geral">
         <div id="form-login">
             <p id="messagemErro">
-                <?php 
-                    session_start();
-                    
+                <?php            
                     $mensagem = isset($_SESSION["msgErro"]) ? $_SESSION["msgErro"] : "";
 
                     if($mensagem != "")

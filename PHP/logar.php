@@ -11,13 +11,18 @@
 
     if($qntdRow > 0){
         while($row = mysqli_fetch_array($result)){
-
+            $_SESSION["ValidaLogin"] = true;
             $_SESSION["usuario"] = $row["usuario"];
             $_SESSION["senha"] = $row["senha"];
         }  
          header('location: ../paginas/painel.php');   
+        die();
 
     }else{
+        unset($_SESSION["ValidaLogin"]);
+        unset($_SESSION["usuario"]);
+        unset($_SESSION["senha"]);
+
         $_SESSION["msgErro"] = "Usuário ou senha incorreto!!";
         header('location: ../paginas/login.php');    
     }

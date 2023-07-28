@@ -1,4 +1,12 @@
-<?php session_start();?>
+<?php 
+    session_start(); 
+
+    if(!isset($_SESSION["ValidaLogin"])){
+        header("location: login.php");
+        session_destroy();
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +15,10 @@
     <title>Painel de Controle</title>
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../PHP/painel-css.php" type="text/css">
+
+    <style>
+
+    </style>
 
 </head>
 <body>
@@ -41,34 +53,71 @@
             </form>
 
             <div id="form-index" class="forms-pag">
-                <form action="" method="POST">
+                <form name="form-pg-index" action="../PHP/alterar-paginas.php" method="POST">
                     <input type="hidden" value="index" name="pagina">
+
                     <center><h2>Página Index</h2></center>
-                    <input type="text">
-                    <input type="text">
-                    <input type="text" name="" id="">
+                    <label for="titulo-carrossel-01">Titulo 1º bloco do Carrossel:</label><input type="text" id="titulo-carrossel-01" name="titulo-carrossel-01" size="70" maxlength="70"><br>
+                    <label for="img-carrossel-01">Imagem 1º bloco do Carrossel:</label><input type="file" accept="image/*" id="img-carrossel-01" name="img-carrossel-01"><br>
+
+                    <label for="titulo-carrossel-02">Titulo 2º bloco do Carrossel:</label><input type="text" id="titulo-carrossel-02" name="titulo-carrossel-02" size="70" maxlength="70"><br>
+                    <label for="img-carrossel-02">Imagem 2º bloco do Carrossel:</label><input type="file" accept="image/*" id="img-carrossel-02" name="img-carrossel-02"><br>
+                
+                    <label for="titulo-carrossel-03">Titulo 3º bloco do Carrossel:</label><input type="text" id="titulo-carrossel-03" name="titulo-carrossel-03" size="70" maxlength="70"><br>
+                    <label for="img-carrossel-03">Imagem 3º bloco do Carrossel:</label><input type="file" accept="image/*" id="img-carrossel-03" name="img-carrossel-03"><br>
+                
+                    <hr>
+
+                    <label for="titulo-fundo-roxo">Titulo fundo Roxo:</label><input type="text" id="titulo-fundo-roxo" name="titulo-fundo-roxo" size="70" maxlength="30"><br>
+                    <label for="texto-fundo-roxo">Texto fundo Roxo:</label><br><textarea name="texto-fundo-roxo" id="texto-fundo-roxo" cols="65" rows="10" maxlength="650"></textarea><br>
+                    <label for="img-fundo-roxo">Imagem fundo Roxo:</label><input type="file" accept="image/*" id="img-fundo-roxo" name="img-fundo-roxo"><br>
+
+                    <hr>
+
+                <div id="content-servicos">
+                    <div id="servicos-01" class="servicos">
+                        <label for="titulo-servico-01">Titulo Serviço 01:</label><br><input type="text" id="titulo-servico-01" name="titulo-servico-01" size="20" maxlength="20"><br>
+                        <label for="texto-servico-01">Texto Serviço 01:</label><br><textarea name="texto-servico-01" id="texto-servico-01" cols="30" rows="10" maxlength="150"></textarea>
+                    </div>
+                    <hr class="hr-servicos">
+                    <div id="servicos-02" class="servicos">
+                        <label for="titulo-servico-02">Titulo Serviço 02:</label><br><input type="text" id="titulo-servico-02" name="titulo-servico-02" size="20" maxlength="20"><br>
+                        <label for="texto-servico-02">Texto Serviço 02:</label><br><textarea name="texto-servico-02" id="texto-servico-02" cols="30" rows="10" maxlength="150"></textarea>
+                    </div>
+                    <hr class="hr-servicos">
+                    <div id="servicos-03" class="servicos">
+                        <label for="titulo-servico-03">Titulo Serviço 03:</label><br><input type="text" id="titulo-servico-03" name="titulo-servico-03" size="20" maxlength="20"><br>
+                        <label for="texto-servico-03">Texto Serviço 03:</label><br><textarea name="texto-servico-03" id="texto-servico-03" cols="30" rows="10" maxlength="150"></textarea>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <input type="submit" value="ALTERAR CONTEÚDO" class="alterar-conteudo">
                 </form>
             </div>
 
             <div id="form-pagina-01" class="forms-pag">
-                <form action="" method="POST">
+                <form name="form-pg-pagina-01" action="../PHP/alterar-paginas.php" method="POST">
                     <input type="hidden" value="pagina-01" name="pagina">
 
                     <center><h2>Página 01</h2></center>
                     <input type="text">
                     <input type="text">
-                    <input type="text" name="" id="">
+
+                    <input type="submit" value="ALTERAR CONTEÚDO" class="alterar-conteudo">
                 </form>
             </div>
 
             <div id="form-pagina-02" class="forms-pag">
-                <form action="" method="POST">
+                <form name="form-pagina-02" action="../PHP/alterar-paginas.php" method="POST">
                     <input type="hidden" value="pagina-02" name="pagina">
 
                     <center><h2>Página 02</h2></center>
                     <input type="text">
                     <input type="text">
-                    <input type="text" name="" id="">
+
+                    <input type="submit" value="ALTERAR CONTEÚDO" class="alterar-conteudo">
                 </form>
             </div>
         </div>

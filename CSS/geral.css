@@ -92,14 +92,15 @@ main{
 /*--------Footer-------*/
 
 #footer{
-    width: 100%;
     background-color: #000;
     color: #FFF;
     display: inline-block;
     text-align: center;
     clear: both;
-    position: relative;
-    bottom: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .footer-social{
