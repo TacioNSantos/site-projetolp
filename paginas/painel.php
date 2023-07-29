@@ -55,7 +55,7 @@
             </form>
 
             <div id="form-index" class="forms-pag">
-                <form name="form-pg-index" action="../PHP/alterar-paginas.php" method="POST">
+                <form name="form-pg-index" action="../PHP/alterar-paginas.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" value="index" name="pagina">
 
                     <center><h2>Página Index</h2></center>
