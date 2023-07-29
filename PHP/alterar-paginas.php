@@ -102,8 +102,10 @@
                                 `titulo_carrossel-03`='$titulo_bloco_carrossel_03', `img_carrossel-01`='$nome_img_carrossel_01',
                                 `img_carrossel-02`='$nome_img_carrossel_02', `img_carrossel-03`='$nome_img_carrossel_03',
                                 `titulo_fundo_roxo`='$titulo_fundo_roxo', `texto_fundo_roxo`='$texto_fundo_roxo',
-                                `img_fundo_roxo`='$nome_img_fundo_roxo', `titulo_servico-01`='$titulo_servico_01',  
-                                `titulo_servico-02`='$titulo_servico_02', `titulo_servico-03`='$titulo_servico_03' 
+                                `img_fundo_roxo`='$nome_img_fundo_roxo', `titulo_servico-01`='$titulo_servico_01',
+                                `texto_servico-01`='$texto_servico_01', `titulo_servico-02`='$titulo_servico_02',
+                                `texto_servico-02`='$texto_servico_02',
+                                `titulo_servico-03`='$titulo_servico_03',`texto_servico-03`='$texto_servico_03'
                                 WHERE id='1' ");
                             
                                 

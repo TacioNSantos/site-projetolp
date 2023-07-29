@@ -7,10 +7,10 @@
     background-color: #F2F2F2 !important;
 }
 
-.carrossel-conteudo img{
+.carrossel-conteudo .carro-imagem{
     background-color: #F2F2F2 !important;
     height: 85vh;
-    width: 99vw;
+    width: 100%;
     margin: 0px !important;
     padding: 0px !important;
 }
@@ -20,6 +20,11 @@
     display: inline-block;
     height: 100%; 
     width: 100vw;
+}
+
+.carrossel-conteudo h1{
+    font-size: 40px;
+    float: left;
 }
 
 #imagens-carrossel{
@@ -109,8 +114,8 @@
     border-radius: 5px;
     display: inline-block;
     position: relative;
-    bottom: 350px;
-    left: 100px;
+    bottom: 180px;
+    left: -515px;
     background: #F2F2F2;
     padding: 20px;
     font-weight: bold;
