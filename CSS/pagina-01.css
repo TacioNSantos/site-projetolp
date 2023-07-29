@@ -5,19 +5,14 @@
     width: 500px;
 }
 
-.servicos-paineis a{
-    color: #000;
-    font-weight: bold;
-}
-
-.servicos-paineis:hover a{
-    color: #5C5CFF;
-    text-decoration: none;
-}
-
 #todos-servicos{
-    width: 100%;
+    width: 100%; 
     text-align: center;
+}
+
+.servicos-paineis:hover .conteudo-servico span{
+    color: #5C5CFF;
+    font-weight: bold;
 }
 
 .servicos-paineis:hover{
@@ -26,7 +21,7 @@
     border: solid black;
 }
 
-.servicos-paineis {
+.servicos-paineis{
     border: ridge; 
     border-radius: 5px;
     display: inline-block;
@@ -36,21 +31,20 @@
     padding: 15px;
 }
 
+.conteudo-servico p{
+    font-weight: 100;
+    color: aqua;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px 50px 25px 50px;
+}
+
 .conteudo-servico{
     margin: 20px;
     display: flex;
     flex-direction: column;
-   text-align: center;
+    text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-.servicos-paineis p{    
-    display: flex;
-    font-family: 'Ubuntu', sans-serif;
-    justify-content: center;
-    margin: 0px 50px 25px 50px;
-    box-sizing: border-box;
 }
 
 #imagem-servico img{ width: 100%; }

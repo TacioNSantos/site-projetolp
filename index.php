@@ -24,8 +24,8 @@
         </div>  
         <a href="index.php"><h4 id="empresa">HOWSEC</h4></a>
         <nav>
-            <a href="paginas/pagina01.html" class="">Serviços</a>
-            <a href="https://raw.githubusercontent.com/TacioNSantos/site-projetolp/main/paginas/pagina01.html" class="">Quem somos</a>
+            <a href="paginas/pagina01.php" class="">Serviços</a>
+            <a href="https://raw.githubusercontent.com/TacioNSantos/site-projetolp/main/paginas/pagina01.php" class="">Quem somos</a>
             <a href="#" class="">Contato</a>
             <a href="#" class="">Perceiros</a>
         </nav>
@@ -41,7 +41,7 @@
                 <div id="carrossel-01" class="carrossel-conteudo">
                     <div class="carro-imagem"><img src="imagens/img-index/<?= $dados_tbl['img_carrossel-01']; ?>" alt="imagem01" width="100%"></div>
                     <h1 id="titulo-carrossel-01" class="titulo-carrossel"><?= $dados_tbl['titulo_carrossel-01']; ?></h1>
-                    <a href="paginas/pagina01.html"><div id="botao-carrossel-01" class="botao-carrossel">SAIBA MAIS ➔</div></a>
+                    <a href="paginas/pagina01.php"><div id="botao-carrossel-01" class="botao-carrossel">SAIBA MAIS ➔</div></a>
                 </div>
 
                 <div id="carrossel-02" class="carrossel-conteudo">

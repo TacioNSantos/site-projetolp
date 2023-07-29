@@ -13,7 +13,6 @@
 
 #geral{
     margin: auto;
-    min-height: 1650px;
     display: flex;
     flex-direction: column;
     padding: 20px;

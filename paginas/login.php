@@ -26,8 +26,8 @@
         </div>  
         <a href="../index.php"><h4 id="empresa">HOWSEC</h4></a>
         <nav>
-            <a href="pagina01.html" class="">Serviços</a>
-            <a href="https://raw.githubusercontent.com/TacioNSantos/site-projetolp/main/paginas/pagina01.html" class="">Quem somos</a>
+            <a href="pagina01.php" class="">Serviços</a>
+            <a href="https://raw.githubusercontent.com/TacioNSantos/site-projetolp/main/paginas/pagina01.php" class="">Quem somos</a>
             <a href="#" class="">Contato</a>
             <a href="#" class="">Perceiros</a>
         </nav>
