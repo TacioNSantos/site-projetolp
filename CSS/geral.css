@@ -132,6 +132,7 @@ main{
     display: inline-block;
     margin: 10px 100px;
     width: 200px;
+    justify-content: center;
 }
 
 #Copyright{
@@ -151,5 +152,9 @@ main{
     font-style: italic;  
 }
 
+.footer-social{
+    align-items: center;
+    padding-left: 10px;
+}
 
 

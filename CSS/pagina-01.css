@@ -1,14 +1,38 @@
 #servicos h3{
     color: #000;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
+    font-style:normal;
+    font-weight: auto;
     line-height: normal;
-    margin: 20px 0px 0px 0px;
+    margin: none;
     display: flex;
-    justify-content: center;
+    justify-items:center;
+    justify-content:left;
     width: auto;
+}
+#servicos h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-style:normal;
+    margin: 0px;
+    margin-left: 30px;
+    width: auto;
+}
+#servicos a{
+    justify-items: center;
+    justify-content:left;
+    width: auto;
+}
+
+.servicos-paineis a{
+    color: #000;
+}
+
+.servicos-paineis a:hover{
+    color: #5C5CFF;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #servicos hr{
@@ -23,13 +47,16 @@
     text-align: center;
 }
 
-.servicos-paineis{
+.servicos-paineis {
+    border: ridge; 
+    border-radius: 5px;
     display: inline-block;
     width: 25%;
     height: 50%;
     margin: 20px;
-    padding: 20px;
+    padding: 0;
 }
+
 
 .content-foto{
     border-radius: 10px;
@@ -38,12 +65,15 @@
 
 .servicos-paineis img{
     width: 105%;
-    height: 200px;
+    height: 10%;
 }
 
 .servicos-paineis p{    
     display: flex;
+    font-family: 'Ubuntu', sans-serif;
     justify-content: center;
+    margin: 0px 50px 25px 50px;
+    box-sizing: border-box;
 }
 
 #imagem-servico img{ width: 100%; }
@@ -51,4 +81,14 @@
 #imagem-servico{
     width: 100%;
     margin-bottom: 50px;
+}
+
+#vetor{
+    display: flex;
+    justify-content:flex-end;
+    z-index: -1;
+}
+#vetor img{
+    width: 10%;
+    height: 10%;
 }
