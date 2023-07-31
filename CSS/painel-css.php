@@ -41,7 +41,7 @@ hr{
     border: solid 1px;
 }
 
-center{
+center h2{
     border-bottom: solid 2px;
 }
 
@@ -64,9 +64,9 @@ textarea{
     resize: none;
 }
 
-.alterar-conteudo{
-    width: 300px;
-    padding: 20px;
+.alterar-conteudo, #form-pagina-01-inserir input[type=submit]{
+    width: 200px;
+    padding: 15px;
 }
 
 .visualizar-imagem{
@@ -88,3 +88,11 @@ textarea{
 label{
     font-weight: bold;
 }
+
+#tabela-alteração{
+  width: 80%;
+  margin: auto;
+}
+
+
+

@@ -5,6 +5,10 @@
     width: 500px;
 }
 
+a{text-decoration: none;}
+.servicos-paineis a:visited{color: black;}
+.servicos-paineis a:link{color: black;}
+
 #todos-servicos{
     width: 100%; 
     text-align: center;
@@ -29,6 +33,10 @@
     height: 210px;
     margin: 15px;
     padding: 15px;
+}
+
+.conteudo-servico span{
+    font-weight: bold;
 }
 
 .conteudo-servico p{

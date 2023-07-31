@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29/07/2023 às 21:25
+-- Tempo de geração: 31/07/2023 às 02:01
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.0.28
 
@@ -97,7 +97,10 @@ INSERT INTO `tbl_pgn-pagina-01` (`id_servico`, `titulo_servico`, `descricao_serv
 (6, 'Automação', 'Otimize processos repetitivos com a automação inteligente.'),
 (7, 'Redes de Computadores', 'Conecte e expanda seus horizontes com redes de computadores.'),
 (8, 'Cloud Services', 'Modernize, escale e crie. Transforme seu negócio com as soluções em nuvem.'),
-(9, 'Infraestrutura', 'Construa bases sólidas para o futuro com a Infraestrutura certa.');
+(9, 'Infraestrutura', 'Construa bases sólidas para o futuro com a Infraestrutura certa.'),
+(10, 'Testando ', 'Testando Testando Testando Testando'),
+(11, 'Testando 02', 'Testando Testando Testando Testando 02'),
+(12, 'Testando 03', 'Testando Testando Testando Testando 03');
 
 --
 -- Índices para tabelas despejadas
@@ -141,7 +144,7 @@ ALTER TABLE `tbl_pgn-index`
 -- AUTO_INCREMENT de tabela `tbl_pgn-pagina-01`
 --
 ALTER TABLE `tbl_pgn-pagina-01`
-  MODIFY `id_servico` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_servico` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
