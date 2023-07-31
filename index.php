@@ -39,19 +39,19 @@
             <div id="imagens-carrossel">
                 
                 <div id="carrossel-01" class="carrossel-conteudo">
-                    <div class="carro-imagem"><img src="imagens/img-index/<?= $dados_tbl['img_carrossel-01']; ?>" alt="imagem01" width="100%"></div>
+                    <div class="carro-imagem"><img src="imagens/img-index/<?= $dados_tbl['img_carrossel-01']; ?>" alt="imagem01"></div>
                     <h1 id="titulo-carrossel-01" class="titulo-carrossel"><?= $dados_tbl['titulo_carrossel-01']; ?></h1>
                     <a href="paginas/pagina01.php"><div id="botao-carrossel-01" class="botao-carrossel">SAIBA MAIS ➔</div></a>
                 </div>
 
                 <div id="carrossel-02" class="carrossel-conteudo">
-                    <div class="carro-imagem"><img src="imagens/img-index/<?= $dados_tbl['img_carrossel-02']; ?>" alt="imagem02" width="100%"></div>
+                    <div class="carro-imagem"><img src="imagens/img-index/<?= $dados_tbl['img_carrossel-02']; ?>" alt="imagem02"></div>
                     <h1 id="titulo-carrossel-02" class="titulo-carrossel"><?= $dados_tbl['titulo_carrossel-02']; ?></h1>
                     <a href="www.google.com"><div id="botao-carrossel-02" class="botao-carrossel">SAIBA MAIS ➔</div></a>
                 </div>
 
                 <div id="carrossel-03" class="carrossel-conteudo">
-                    <div class="carro-imagem"><img src="imagens/img-index/<?= $dados_tbl['img_carrossel-03']; ?>" alt="imagem03" width="100%"></div>
+                    <div class="carro-imagem"><img src="imagens/img-index/<?= $dados_tbl['img_carrossel-03']; ?>" alt="imagem03"></div>
                     <h1 id="titulo-carrossel-03" class="titulo-carrossel"><?= $dados_tbl['titulo_carrossel-03']; ?></h1>
                     <a href="www.google.com"><div id="botao-carrossel-03" class="botao-carrossel">SAIBA MAIS ➔</div></a>
                 </div>
