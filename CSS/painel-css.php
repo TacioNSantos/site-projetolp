@@ -64,9 +64,9 @@ textarea{
     resize: none;
 }
 
-.alterar-conteudo, #form-pagina-01-inserir input[type=submit]{
+#form-pagina-01-inserir input[type=submit]{
     width: 200px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .visualizar-imagem{

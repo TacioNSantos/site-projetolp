@@ -42,7 +42,7 @@
     </div>
 
         <div id="todos-servicos">
-            <?php while($row = mysqli_fetch_array($result)) {?>
+            <?php while($row = mysqli_fetch_array($result)) { ?>
                 <div class="servicos-paineis">
                     <a href="#?pg=<?php echo($row["id_servico"]);?>"> 
                         <div class="conteudo-servico">

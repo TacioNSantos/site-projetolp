@@ -118,14 +118,19 @@
                     <table id="tabela-alteração">
                         <?php while($row = mysqli_fetch_array($result_pagina_01)){ ?>
                             <tr>
-                                <td class="td-titulo-servico"><label for="titulo-servico<?php echo($row["id_servico"]); ?>">Titulo do Serviço:</label><input required type="text" name="titulo-servico<?php echo($row["id_servico"]);?>" id="titulo-servico-<?php echo($row["id_servico"]);?>" value="<?php echo($row["titulo_servico"]);?>" maxlength="25" size="30"><td>
-                                <td class="td-descricao-servico"><label for="descricao-servico-<?php echo($row["id_servico"]); ?>">Descrição do Serviço:</label><input required type="text" name="descricao-servico-<?php echo($row["id_servico"]);?>" id="descricao-servico-<?php echo($row["id_servico"]);?>" value="<?php echo($row["descricao_servico"]);?>" maxlength="75" size="80"></td>
-                                <td class="td-apagar-servico"><form name="form-pagina-01-apagar" id="form-pagina-01-apagar" action="../PHP/apagar-servico.php" method="POST"><input form="form-pagina-01-apagar" type="hidden" name="id_apagar" id="id_apagar" value="<?php echo($row["id_servico"]); ?>"><input type="submit" value="APAGAR"></form></td>
+                                <td class="td-id-servico"><input type="hidden" name="id-servico" value="<?php echo($row['id_servico']); ?>" readonly></td>
+                                <td class="td-titulo-servico"><label for="titulo-servico">Titulo do Serviço:</label><input required type="text" name="titulo-servico" id="titulo-servico-<?php echo($row["id_servico"]);?>" value="<?php echo($row["titulo_servico"]);?>" maxlength="25" size="30"><td>
+                                <td class="td-descricao-servico"><label for="descricao-servico">Descrição do Serviço:</label><input required type="text" name="descricao-servico" id="descricao-servico-<?php echo($row["id_servico"]);?>" value="<?php echo($row["descricao_servico"]);?>" maxlength="75" size="80"></td>
+                                <td class="td-alterar-servico"><input class="btnAlterar" type="submit" value="ALTERAR"></td>
+                                <td class="td-apagar-servico">
+                                    <form name="form-pagina-01-apagar" id="form-pagina-01-apagar" action="../PHP/apagar-servico.php" method="POST">
+                                        <input form="form-pagina-01-apagar" type="hidden" name="id-servico-apagar" id="id-servico-apagar" value="<?php echo($row["id_servico"]); ?>" readonly>
+                                        <input form="form-pagina-01-apagar" class="btnApagar" type="submit" value="APAGAR">
+                                    </form>
+                                </td>
                             </tr>
                         <?php } ?>
                     </table>
-                    <hr>
-                    <input type="submit" value="ALTERAR CONTEÚDO" class="alterar-conteudo">
                 </form> 
             </div>
 
