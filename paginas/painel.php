@@ -22,8 +22,38 @@
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../CSS/painel-css.php" type="text/css">
 
+    <style>
+        #wrap-popup{
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            margin-top:10px;
+        }
+
+        #popup{
+            width: 400px;
+            background-color: white;
+            text-align:center;
+            padding: 40px 150px;
+        }
+    </style>
 </head>
 <body>
+    <div id="wrap-popup">
+        <div id="popup">
+            <?php 
+                // if(isset($_SESSION["msg"])){
+                //     echo($_SESSION["msg"]);
+                //     unset($_SESSION["msg"]);
+                // }
+                    echo("ERROOOOOOO");
+            ?>
+        </div>
+    </div>
+
     <header>
             <div id="logo">
                 <a href="../index.php">

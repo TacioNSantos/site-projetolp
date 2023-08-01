@@ -94,5 +94,13 @@ label{
   margin: auto;
 }
 
+/* POPUP */
+
+#popup{
+    display: inline-block;
+    width: 400px;
+    position: static;
+    top: 0px;
+}
 
 
