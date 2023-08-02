@@ -2,6 +2,7 @@
     include("conexao.php");
     session_start();
 
+
     $id_servico = $_POST["id-servico-apagar"];
 
     try{
