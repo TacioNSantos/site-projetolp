@@ -22,8 +22,27 @@
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../CSS/painel-css.php" type="text/css">
 
+    <style>
+        #popup{
+            
+            
+        }
+
+    </style>
 </head>
 <body>
+
+<?php 
+    if(isset($_SESSION["msg"])){
+        echo
+        "<div id='popup'>".
+            $_SESSION['msg']. "<a href='#popup'><input type='button' value='OK'></a>       
+        </div>
+        ";
+        unset($_SESSION["msg"]);
+    }
+?>   
+
     <header>
             <div id="logo">
                 <a href="../index.php">
@@ -103,7 +122,7 @@
             <div id="form-pagina-01" class="forms-pag">
                 <center><h2>Página 01</h2></center>
 
-                <center><h4>INSERIR</h4></center>
+                <center><h3>INSERIR</h4></center>
                 <form id="form-pagina-01-inserir" name="form-pagina-01-inserir" action="../PHP/inserir-servico.php" method="POST">
                     <label for="inserir-titulo-servico">Titulo do Serviço:</label><input required type="text" name="inserir-titulo-servico" maxlength="25" size="30">
                     <label for="inserir-descricao-servico">Descrição do Serviço:</label><input required type="text" name="inserir-descricao-servico" id="" maxlength="75" size="80"> <br>
@@ -112,21 +131,29 @@
 
                 <hr>
                 <center><h3>ALTERAR/APAGAR</h3></center>
-                <form name="form-pg-pagina-01" action="../PHP/alterar-paginas.php" method="POST">
-                    <input type="hidden" value="pagina-01" name="pagina">
+                <input form="form-pg-pagina-01" type="hidden" value="pagina-01" name="pagina">
 
-                    <table id="tabela-alteração">
-                        <?php while($row = mysqli_fetch_array($result_pagina_01)){ ?>
+                <table id="tabela-alteração">
+                    <?php while($row = mysqli_fetch_array($result_pagina_01)){ ?>
+                        <form name="form-pg-pagina-01" action="../PHP/alterar-paginas.php" method="POST">
                             <tr>
-                                <td class="td-titulo-servico"><label for="titulo-servico<?php echo($row["id_servico"]); ?>">Titulo do Serviço:</label><input required type="text" name="titulo-servico<?php echo($row["id_servico"]);?>" id="titulo-servico-<?php echo($row["id_servico"]);?>" value="<?php echo($row["titulo_servico"]);?>" maxlength="25" size="30"><td>
-                                <td class="td-descricao-servico"><label for="descricao-servico-<?php echo($row["id_servico"]); ?>">Descrição do Serviço:</label><input required type="text" name="descricao-servico-<?php echo($row["id_servico"]);?>" id="descricao-servico-<?php echo($row["id_servico"]);?>" value="<?php echo($row["descricao_servico"]);?>" maxlength="75" size="80"></td>
-                                <td class="td-apagar-servico"><form name="form-pagina-01-apagar" id="form-pagina-01-apagar" action="../PHP/apagar-servico.php" method="POST"><input form="form-pagina-01-apagar" type="hidden" name="id_apagar" id="id_apagar" value="<?php echo($row["id_servico"]); ?>"><input type="submit" value="APAGAR"></form></td>
+                                <td class="td-id-servico"><input type="hidden" name="id-servico" value="<?php echo($row['id_servico']); ?>" readonly></td>
+                                <td class="td-titulo-servico"><label for="titulo-servico">Titulo do Serviço:</label><input required type="text" name="titulo-servico" id="titulo-servico-<?php echo($row["id_servico"]);?>" value="<?php echo($row["titulo_servico"]);?>" maxlength="25" size="30"><td>
+                                <td class="td-descricao-servico"><label for="descricao-servico">Descrição do Serviço:</label><input required type="text" name="descricao-servico" id="descricao-servico-<?php echo($row["id_servico"]);?>" value="<?php echo($row["descricao_servico"]);?>" maxlength="75" size="80"></td>
+                                <td class="td-alterar-servico"><input class="btnAlterar" type="submit" value="ALTERAR"></td>
+                        </form> 
+                                <td class="td-apagar-servico">
+                                    <form name="form-pagina-01-apagar" id="form-pagina-01-apagar" action="../PHP/apagar-servico.php" method="POST">
+                                        <input  form="form-pagina-01-apagar" type="hidden" name="id-servico-apagar" id="id-servico-apagar" value="<?php echo($row["id_servico"]); ?>" readonly>
+                                        <input form="form-pagina-01-apagar" class="btnApagar" type="submit" value="APAGAR">
+                                    </form>
+                                </td>
                             </tr>
-                        <?php } ?>
-                    </table>
-                    <hr>
-                    <input type="submit" value="ALTERAR CONTEÚDO" class="alterar-conteudo">
-                </form> 
+                        
+                    <?php } ?>
+                    
+                </table>
+                
             </div>
 
             <div id="form-pagina-02" class="forms-pag">

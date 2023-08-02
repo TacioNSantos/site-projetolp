@@ -108,7 +108,7 @@
                                 `titulo_servico-03`='$titulo_servico_03',`texto_servico-03`='$texto_servico_03'
                                 WHERE id='1' ");
                             
-                                
+            $_SESSION["msg"] = "Serviço Alterado com Sucesso!";                
             header("location: ../paginas/painel.php");
 
         }catch(Exception $e){
@@ -117,8 +117,20 @@
 
     // CASO SEJA A PAGINA-01
     }elseif($pag == "pagina-01"){
-        echo"pagina-01";
-    
+
+        
+        $id_servico = $_POST["id-servico"];
+        $titulo_servico = $_POST["titulo-servico"];
+        $descricao_servico = $_POST["descricao-servico"];
+        
+        try{
+            mysqli_query($con, "UPDATE `tbl_pgn-pagina-01` SET `titulo_servico`='$titulo_servico', `descricao_servico`='$descricao_servico' WHERE `id_servico`='$id_servico'");
+            $_SESSION["msg"] = "Serviço Alterado com Sucesso!";
+            header("location: ../paginas/painel.php");
+        }catch(Exception $e){
+            die($e->getMessage());
+        }
+        
     // CASO SEJA A PAGINA-02
     }elseif($pag == "pagina-02"){
         echo"pagina-02";
