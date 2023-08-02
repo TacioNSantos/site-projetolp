@@ -64,7 +64,7 @@ textarea{
     resize: none;
 }
 
-#form-pagina-01-inserir input[type=submit]{
+#form-pagina-01-inserir input[type=submit], .alterar-conteudo{
     width: 200px;
     padding: 10px;
 }
@@ -97,10 +97,50 @@ label{
 /* POPUP */
 
 #popup{
+    width: 350px;
+    height: 10px;
+    position: fixed;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top:5px;
+    background-color: white;
+    text-align:center;
+    padding: 40px 150px;
+    border-radius: 10px;
+    border: solid green 3px;
+    background-color: #47fc00;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    animation-name: popup;
+    animation-iteration-count: 1;
+    animation-duration: 0.6s;
+}
+
+@keyframes popup {
+    from{ top: -100px;}
+    to{top: 0px;}
+}
+
+#popup input{
     display: inline-block;
-    width: 400px;
-    position: static;
-    top: 0px;
+    padding: 5px;
+    width: 80px;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    top: 25px;
+}
+
+#popup a{
+    width: 0px;
+}
+
+#popup:target{
+    visibility: hidden;
 }
 
 

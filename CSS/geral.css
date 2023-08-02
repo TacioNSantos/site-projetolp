@@ -84,13 +84,13 @@ nav a:hover{
     cursor: pointer;
 }
 
-main{
-    min-height: 80vh;
+main, #main{
+    min-height: 65vh;
     box-sizing: border-box;
 }
 
-/*--------Footer-------*/
 
+/*--------Footer-------*/
 #footer{
     background-color: #000;
     color: #FFF;
