@@ -143,4 +143,11 @@ label{
     visibility: hidden;
 }
 
+.td-img-servico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
