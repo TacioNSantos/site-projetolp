@@ -8,7 +8,7 @@
     }
 
     $query_pagina_index =  mysqli_query($con, "SELECT * FROM `tbl_pgn-index` WHERE id='1'");
-    
+
     $query_pagina_01 = mysqli_query($con, "SELECT * FROM `tbl_pgn-pagina-01`");
 
 ?>
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../CSS/painel-css.php" type="text/css">
 
     <style>
-       
+
     </style>
 </head>
 
