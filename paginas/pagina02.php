@@ -50,7 +50,6 @@
         <div id="preco">
             <p><?php echo($dados_tbl["preco_servico"]);?></p>
         </div>
-        
     </div>
 
     <div id="footer">
