@@ -38,9 +38,18 @@
     </header>
 
     <div id="main">
-        <?php 
-            echo $dados_tbl["descricao_servico"];
-        ?>
+        <div id="titulo-servico"><h1><?php echo($dados_tbl["titulo_servico"]);?></h1></div>
+
+        <div id="descricao-servico"><h3><?php echo($dados_tbl["descricao_servico"]);?></h3></div>
+        
+        <div>
+            <div id="texto-servico"><p><?php echo($dados_tbl["texto_servico"]);?></p></div>
+            <div id="img-servico"><img src="../imagens/img-pagina-02/<?php echo($dados_tbl["img_servico"]);?>" alt="Imagem do serviço"></div>
+        </div>
+
+        <div id="preco">
+            <p><?php echo($dados_tbl["preco_servico"]);?></p>
+        </div>
     </div>
 
     <div id="footer">

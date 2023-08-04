@@ -53,10 +53,14 @@ center h2{
 
 .servicos{
     width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hr-servicos{   
-    size: 150px;
+    height: 50px;
     margin: 15px;
 }
 
@@ -143,4 +147,30 @@ label{
     visibility: hidden;
 }
 
+.td-img-servico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.td-texto-servico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabela-form-pagina-02{
+    border-spacing: 20px;
+    
+}
+
+.td-id-servico{
+    display:none;
+}
+
+#tabela-form-pagina-02 td{
+    border-top: 5px solid;
+    padding: 10px;
+}
