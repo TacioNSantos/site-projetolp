@@ -31,20 +31,20 @@
         $id_servico_02 = $_POST["servico-destaque-02"];
         $id_servico_03 = $_POST["servico-destaque-03"];
 
-        $result_servico_01 = mysqli_query($con, "SELECT `titulo_servico`, `texto_servico` FROM `tbl_pgn-pagina-01` WHERE `id_servico`='$id_servico_01'");
+        $result_servico_01 = mysqli_query($con, "SELECT `titulo_servico`, `descricao_servico` FROM `tbl_pgn-pagina-01` WHERE `id_servico`='$id_servico_01'");
         $dados_servico_01 = $result_servico_01->fetch_array();
         $titulo_servico_01 = $dados_servico_01['titulo_servico'];
-        $texto_servico_01 = $dados_servico_01['texto_servico'];
+        $descricao_servico_01 = $dados_servico_01['descricao_servico'];
 
-        $result_servico_02 = mysqli_query($con, "SELECT `titulo_servico`, `texto_servico` FROM `tbl_pgn-pagina-01` WHERE `id_servico`='$id_servico_02'");
+        $result_servico_02 = mysqli_query($con, "SELECT `titulo_servico`, `descricao_servico` FROM `tbl_pgn-pagina-01` WHERE `id_servico`='$id_servico_02'");
         $dados_servico_02 = $result_servico_02->fetch_array();
         $titulo_servico_02 = $dados_servico_02['titulo_servico'];
-        $texto_servico_02 = $dados_servico_02['texto_servico'];
+        $descricao_servico_02 = $dados_servico_02['descricao_servico'];
 
-        $result_servico_03 = mysqli_query($con, "SELECT `titulo_servico`, `texto_servico` FROM `tbl_pgn-pagina-01` WHERE `id_servico`='$id_servico_03'");
+        $result_servico_03 = mysqli_query($con, "SELECT `titulo_servico`, `descricao_servico` FROM `tbl_pgn-pagina-01` WHERE `id_servico`='$id_servico_03'");
         $dados_servico_03 = $result_servico_03->fetch_array();
         $titulo_servico_03 = $dados_servico_03['titulo_servico'];
-        $texto_servico_03 = $dados_servico_03['texto_servico'];
+        $descricao_servico_03 = $dados_servico_03['descricao_servico'];
 
         if(key_exists("name", $img_bloco_carrossel_01)){
             if(move_uploaded_file($img_bloco_carrossel_01["tmp_name"], "../imagens/img-index/".$img_bloco_carrossel_01["name"])){
@@ -112,9 +112,9 @@
                                 `img_carrossel-02`='$nome_img_carrossel_02', `img_carrossel-03`='$nome_img_carrossel_03',
                                 `titulo_fundo_roxo`='$titulo_fundo_roxo', `texto_fundo_roxo`='$texto_fundo_roxo',
                                 `img_fundo_roxo`='$nome_img_fundo_roxo', `titulo_servico-01`='$titulo_servico_01',
-                                `texto_servico-01`='$texto_servico_01', `titulo_servico-02`='$titulo_servico_02',
-                                `texto_servico-02`='$texto_servico_02',
-                                `titulo_servico-03`='$titulo_servico_03',`texto_servico-03`='$texto_servico_03'
+                                `texto_servico-01`='$descricao_servico_01', `titulo_servico-02`='$titulo_servico_02',
+                                `texto_servico-02`='$descricao_servico_02',
+                                `titulo_servico-03`='$titulo_servico_03',`texto_servico-03`='$descricao_servico_03'
                                 WHERE id='1' ");
                             
             $_SESSION["msg"] = "Serviço Alterado com Sucesso!";                

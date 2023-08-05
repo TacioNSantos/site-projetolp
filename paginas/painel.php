@@ -73,7 +73,14 @@
                 <input type="hidden" value="index" name="pagina">
 
                 <center><h2>Página Index</h2></center>
-                <?php mysqli_data_seek($query_pagina_index, 0); while($row = mysqli_fetch_array($query_pagina_index)){ ?>
+                <?php mysqli_data_seek($query_pagina_index, 0); while($row = mysqli_fetch_array($query_pagina_index)){ 
+                    $titulo_srv_01 = $row["titulo_servico-01"];
+                    $titulo_srv_02 = $row["titulo_servico-02"];
+                    $titulo_srv_03 = $row["titulo_servico-03"];
+                    $descricao_srv_01 = $row["texto_servico-01"];
+                    $descricao_srv_02 = $row["texto_servico-02"];
+                    $descricao_srv_03 = $row["texto_servico-03"];
+                ?>
                     <label for="titulo-carrossel-01">Titulo 1º bloco do Carrossel:</label><input required type="text" id="titulo-carrossel-01" name="titulo-carrossel-01" size="70" maxlength="70" value="<?=$row['titulo_carrossel-01']?>"><br>
                     <div class="visualizar-imagem"><label for="img-carrossel-01">Imagem 1º bloco do Carrossel:</label><input type="file" accept="image/*" id="img-carrossel-01" name="img-carrossel-01"><div class="imagem"><p class="p-atual">ATUAL</p><img src="../imagens/img-index/<?=$row['img_carrossel-01']?>" alt="Imagem Atual" width="100%"></div></div><br>
 
@@ -96,7 +103,7 @@
                             <label for="servico-destaque-01">Escolha um Serviço de Destaque:</label>
                             <select name="servico-destaque-01" id="servico-destaque-01" required>
                                 <?php mysqli_data_seek($query_pagina_01, 0); while($row2 = mysqli_fetch_array($query_pagina_01)) {?>
-                                    <option value="<?php echo($row['id_servico']);?>" <?php if($row2["titulo_servico"]==$row["titulo_servico-01"] and $row2["texto_servico"]==$row["texto_servico-01"]){echo"selected";}?>><?php echo($row2['titulo_servico']);?></option>
+                                    <option value="<?php echo($row2['id_servico']);?>" <?php if($row2["titulo_servico"]==$titulo_srv_01 and $row2["descricao_servico"]==$descricao_srv_01){echo("selected");}?>><?php echo($row2['titulo_servico']);?></option>
                                 <?php }?>
                             </select>
                         </div>
@@ -105,7 +112,7 @@
                         <label for="servico-destaque-02">Escolha um Serviço de Destaque:</label>
                             <select name="servico-destaque-02" id="servico-destaque-02" required>
                                 <?php mysqli_data_seek($query_pagina_01, 0); while($row2 = mysqli_fetch_array($query_pagina_01)) {?>
-                                    <option value="<?php echo($row2['id_servico']);?>" <?php if($row2["titulo_servico"]==$row["titulo_servico-02"] and $row2["texto_servico"]==$row["texto_servico-02"]){echo"selected";}?>><?php echo($row2['titulo_servico']);?>><?php echo($row2['titulo_servico']);?></option>
+                                    <option value="<?php echo($row2['id_servico']);?>" <?php if($row2["titulo_servico"]==$titulo_srv_02 and $row2["descricao_servico"]==$descricao_srv_02){echo("selected");}?>><?php echo($row2['titulo_servico']);?></option>
                                 <?php }?>
                             </select>
                         </div>
@@ -114,7 +121,7 @@
                         <label for="servico-destaque-03">Escolha um Serviço de Destaque:</label>
                             <select name="servico-destaque-03" id="servico-destaque-03" required>
                                 <?php mysqli_data_seek($query_pagina_01, 0); while($row2 = mysqli_fetch_array($query_pagina_01)) {?>
-                                    <option value="<?php echo($row2['id_servico']);?>" <?php echo($row['id_servico']);?>" <?php if($row2["titulo_servico"]==$row["titulo_servico-03"] and $row2["texto_servico"]==$row["texto_servico-03"]){echo"selected";}?>><?php echo($row2['titulo_servico']);?>><?php echo($row2['titulo_servico']);?></option>
+                                    <option value="<?php echo($row2['id_servico']);?>" <?php if($row2["titulo_servico"]==$titulo_srv_03 and $row2["descricao_servico"]==$descricao_srv_03){echo("selected");}?>><?php echo($row2['titulo_servico']);?></option>
                                 <?php }?>
                             </select>
                         </div>
