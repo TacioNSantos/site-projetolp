@@ -162,8 +162,7 @@ label{
 }
 
 #tabela-form-pagina-02{
-    border-spacing: 20px;
-    
+    border-spacing: 5px;
 }
 
 .td-id-servico{
@@ -172,5 +171,4 @@ label{
 
 #tabela-form-pagina-02 td{
     border-top: 5px solid;
-    padding: 10px;
 }
